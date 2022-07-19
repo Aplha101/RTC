@@ -13,9 +13,6 @@ function outputRoom(room){
     roomName.innerText = room
 }
 
-function outputUsers(user){
-    
-}
 socket.emit("joinRoom" , {username , room})
 
 socket.on("roomUsers" , ({room ,users}) => {
